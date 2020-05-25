@@ -6,7 +6,7 @@ class Anagram
     @word = word
   end
   
-  def match(string)
+  def match(array)
     final_arr = []
 
     sorted_arr = string.split(" ").map{|i| i.split("").sort.join}
