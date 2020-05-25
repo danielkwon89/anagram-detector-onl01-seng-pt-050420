@@ -7,7 +7,7 @@ class Anagram
   end
   
   def match
-    self.word_string
+    self.@word_string
   end
 
 end
