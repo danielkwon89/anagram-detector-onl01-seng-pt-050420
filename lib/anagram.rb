@@ -1,6 +1,6 @@
 class Anagram
   
-  attr_accessor :word
+  attr_accessor :word_string
   
   def initialize(string)
     
