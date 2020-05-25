@@ -13,4 +13,5 @@ class Anagram
     sorted_arr.each_with_index{|v, i| final_arr << array[i] if v == word}
     final_arr
   end
+  
 end
