@@ -6,8 +6,16 @@ class Anagram
     @word = word
   end
   
-  def match(words_string)
-    self.word_string
-  end
+  def match(string)
+    final_arr = []
 
+    sorted_arr = string.split(" ").map{|i| i.split("").sort.join}
+
+    word = self.word.split("").sort.join
+
+    sorted_arr.each_with_index{|v, i| final_arr << string.split(" ")[i] if v == word}
+
+    final_arr
+  end
+  
 end
